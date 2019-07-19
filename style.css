@@ -1,5 +1,11 @@
 /* *{ margin: 0; padding: 0; } */
 
+.clearfixsol:after { content: ""; display: table; clear: both; }
+.genelection-sections:after { content: ""; display: table; clear: both; }
+
+
+.post-template-single-full-width-php p { margin-bottom: 0; }
+
 #genelection2019{
     width: 100%;
     max-width: 1400px;
@@ -8,20 +14,46 @@
 }
 .genelectionheader h1{ font-family: "Playfair Display"; font-style: italic; font-size: 50px; line-height: 50px;}
 
-#genelection2019 p { font-family: 'Open Sans', sans-serif; line-height: 18px; font-size: 14px;}
+.genelection-sections { margin-bottom: 80px;}
+/* .genelection-sections .col { float: left; } */
+
+#genelection2019 p { font-family: 'Open Sans', sans-serif; line-height: 18px; font-size: 13px; margin-bottom: 15px;}
+/* .genelection-sections p { } */
 
 #genelection2019 h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif;}
 
 #genelection2019 h2{ text-transform: uppercase; font-size: 1em; letter-spacing: 0.2em; font-weight: 700;}
 
-
 #genelection2019 { padding: 0 25px; }
 
+.piecharts{ float: left; width: 50%; }
+
+#aehortcuts ul li{ list-style: none; float: left;}
+#aehortcuts ul li a{ line-height:10px;}
+#aehortcuts ul li a img{ border-radius: 50%;}
+
+
+.dropdown select{ background-color: #575556; color: #ffffff; border: none; width: 100%; padding: 5px 10px; margin-bottom: 15px;   }
+
 /* Mobile Devices */
-@media screen and (min-width: 300px) and (max-width: 650px){}
+@media screen and (min-width: 300px) and (max-width: 650px){
+
+    .hideinmobile{ display: none; }
+
+}
 
 /* Tablet Devices */
-@media screen and (min-width: 651px) and (max-width: 1024px){}
+@media screen and (min-width: 651px) and (max-width: 1024px){
+    .hideintab{ display: none; }
+    .piecharts { float: left; width: 33.3%; }
+}
 
-/*Small Laptops */
-@media screen and (min-width: 1025px) and (max-width: 1024px){}
+/*all devices above 1025 */
+@media screen and (min-width: 1025px){
+    .hideindesktop{ display: none; }
+    .piecharts { float: left; width: 33.3%; }
+    .pull-left{ float: left;}
+    .pull-right{ float: right;}
+    .genelection-sections .col1 { width: 70%; }
+    .genelection-sections .col2 { width: 30%; }
+}

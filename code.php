@@ -25,20 +25,20 @@
         <p>Click on the map to get info related to states. The coloured boxes give you the constituency-wise data.</p>
     </header>
 
-    <section class="genelection-sections">
-        <h2>SEATS WON SO FAR</h2>
+    <section class="genelection-sections" id="allianceoverview">
+        <?php include 'template-parts/allianceoverview.php';?>
+    </section>
+    <section class="genelection-sections clearfixsol" id="exitPoll">
+        <?php include 'template-parts/exitpollview.php';?>
     </section>
     <section class="genelection-sections">
-        <h2>EXIT POLL FORECAST</h2>
+        <?php include 'template-parts/livemapview.php';?>
     </section>
     <section class="genelection-sections">
-        <h2>Leading and trailing</h2>
+        <?php include 'template-parts/comparisionview.php';?>
     </section>
     <section class="genelection-sections">
-        <h2>Comparison: 2014 and 2019</h2>
-    </section>
-    <section class="genelection-sections">
-        <h2>How the States fare</h2>
+        <?php include 'template-parts/aeelectionview.php';?>
     </section>
 
 </div>
