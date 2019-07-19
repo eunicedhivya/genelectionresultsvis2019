@@ -1,6 +1,14 @@
 <h2>Leading and trailing</h2>
 <p>Keep scrolling to see various visualisations of the unfolding General Elections of India</p>
 <div class="col pull-right col1">
+    <div class="dropdown">
+        <select id="stateselect2019" onchange="showconstituencylist()">
+            <option value="NAN" selected="selected">- Select a State -</option>
+        </select> <br>
+        <select id="constituencyselect2019">
+            <option value="NAN" selected="selected">- Select a Constituency -</option>
+        </select>
+    </div>
     <div id="livemap">
         <img src="noimages/plainmap.jpg" alt="">    
     </div>
@@ -15,14 +23,6 @@
     </div>
 </div>
 <div class="col pull-left col2">
-    <div class="dropdown">
-        <select id="stateselect2019" onchange="showconstituencylist()">
-            <option value="NAN" selected="selected">- Select a State -</option>
-        </select> <br>
-        <select id="constituencyselect2019">
-            <option value="NAN" selected="selected">- Select a Constituency -</option>
-        </select>
-    </div>
     <div id="resultStatus">
         <p>Current Status</p>
         <p><span>542</span> of 542</p>
