@@ -27,6 +27,7 @@
 #genelection2019 { padding: 0 25px; }
 
 .piecharts{ float: left; width: 50%; }
+.piecharts h3{ font-size: 10px; font-weight: 700; text-transform: uppercase;}
 
 #aehortcuts { margin-bottom: 15px; }
 #aehortcuts ul li{ list-style: none; float: left;}
@@ -39,6 +40,8 @@
 .electionbutton:disabled { background-color: #dadada }
 
 .dropdown select{ background-color: #575556; color: #ffffff; border: none; width: 100%; padding: 5px 10px; margin-bottom: 15px;   }
+
+.bar{height: 40px; }
 
 /* Mobile Devices */
 @media screen and (min-width: 300px) and (max-width: 650px){

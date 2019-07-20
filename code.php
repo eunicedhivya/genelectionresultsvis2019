@@ -8,10 +8,7 @@
     
     
 </head>
-<body>
-    
-</body>
-</html> -->
+<body> -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -44,4 +41,77 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="https://thefederal.com/embed/common-js/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://thefederal.com/embed/common-js/underscore-min.js"></script>
+<script src="js/data.js"></script>
 <script src="js/interaction.js"></script>
+<script src="js/horizontalstackchart.js"></script>
+<script src="js/piechart.js"></script>
+<script type='text/javascript'>
+
+    // Alliance overview (Section one) =================================================
+    //=================================================================
+    drawHorizontalStackChart("#mainallianceseatshare", allianceData, {
+        width: 800,
+        height: 60,
+        margin: { top: 25, bottom: 25, left: 0, right: 0 },
+        cutoff: 20,
+        type: "currentalliancechartWon",
+        textLabel: 'party',
+        numberLabel: 'lead%',
+        displayLabel: 'lead'
+    })
+
+    drawHorizontalStackChart("#leadwinhorchart", allianceData, {
+        width: 800,
+        height: 60,
+        margin: { top: 25, bottom: 25, left: 0, right: 0 },
+        cutoff: 20,
+        type: "alliancechartWon",
+        textLabel: 'party',
+        numberLabel: 'lead%',
+        displayLabel: 'lead'
+    });
+
+    //exit poll view (Section Two) =================================================
+    //=================================================================
+    function drawPostPolls(sno){
+        
+        var fdPostPolls = _.filter(postpolldata, function(pbj){
+        return pbj.SNO === sno;
+        })
+
+        // console.log("fdPostPolls", fdPostPolls);
+
+        d3.select("#"+sno+" h3").text(fdPostPolls[0]["Poll"])
+
+        drawPiechart("#"+sno+" .pollchart", fdPostPolls, {
+        width: 500,
+        height: 270,
+        pi: Math.PI,
+        margin: { top: 20, right: 20, bottom: 20, left: 20 },
+        innerR: 150,
+        textLabel: "Party",
+        numberLabel: "seats",
+        displayLabel: "seats",
+        })
+
+
+    }
+    drawPostPolls("SN01")
+    drawPostPolls("SN02")
+    drawPostPolls("SN03")
+    drawPostPolls("SN05")
+    drawPostPolls("SN15")
+    drawPostPolls("SN07")
+
+    //live map view (Section Three) =================================================
+    //=================================================================
+
+
+    //comparision view (Section Four) =================================================
+    //=================================================================
+    //ae election view (Section Five) =================================================
+    //=================================================================
+</script>
