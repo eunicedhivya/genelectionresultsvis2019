@@ -31,7 +31,7 @@
     <section class="genelection-sections">
         <?php include 'template-parts/livemapview.php';?>
     </section>
-    <section class="genelection-sections">
+    <section class="genelection-sections clearfixsol">
         <?php include 'template-parts/comparisionview.php';?>
     </section>
     <section class="genelection-sections">
@@ -45,7 +45,9 @@
 <script src="https://d3js.org/topojson.v2.min.js"></script>
 <script src="https://thefederal.com/embed/common-js/underscore-min.js"></script>
 <script src="js/data.js"></script>
+<script src="js/importdata.js"></script>
 <script src="js/interaction.js"></script>
+<script src="js/statemap.js"></script>
 <script src="js/horizontalstackchart.js"></script>
 <script src="js/piechart.js"></script>
 <script type='text/javascript'>
@@ -112,6 +114,9 @@
 
     //comparision view (Section Four) =================================================
     //=================================================================
+    drawMap('.const-map-2014', 'pc+state', "2014", "Desktop");
+    drawMap('.const-map-2019', 'pc+state', "2019", "Desktop");
+
     //ae election view (Section Five) =================================================
     //=================================================================
 </script>

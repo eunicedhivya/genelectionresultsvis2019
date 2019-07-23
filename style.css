@@ -43,6 +43,8 @@
 
 .bar{height: 40px; }
 
+.width50{ width: 50%;}
+
 /* Mobile Devices */
 @media screen and (min-width: 300px) and (max-width: 650px){
 
