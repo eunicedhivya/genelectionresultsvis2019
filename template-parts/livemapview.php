@@ -10,7 +10,7 @@
         </select>
     </div>
     <div id="livemap">
-        <img src="noimages/plainmap.jpg" alt="">    
+        <!-- <img src="noimages/plainmap.jpg" alt="">     -->
     </div>
     <div id="aehortcuts" class="clearfixsol">
         <p>JUMP TO: ASSEMBLY RESULTS 2019</p>

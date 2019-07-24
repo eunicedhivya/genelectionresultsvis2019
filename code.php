@@ -48,6 +48,7 @@
 <script src="js/importdata.js"></script>
 <script src="js/interaction.js"></script>
 <script src="js/statemap.js"></script>
+<script src="js/custommap.js"></script>
 <script src="js/horizontalstackchart.js"></script>
 <script src="js/piechart.js"></script>
 <script type='text/javascript'>
@@ -110,7 +111,7 @@
 
     //live map view (Section Three) =================================================
     //=================================================================
-
+    drawCustomMap('#livemap', 'state', '2019', "Desktop");
 
     //comparision view (Section Four) =================================================
     //=================================================================
