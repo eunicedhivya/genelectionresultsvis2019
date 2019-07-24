@@ -49,6 +49,7 @@
 <script src="js/interaction.js"></script>
 <script src="js/statemap.js"></script>
 <script src="js/custommap.js"></script>
+<script src="js/clusterchart.js"></script>
 <script src="js/horizontalstackchart.js"></script>
 <script src="js/piechart.js"></script>
 <script type='text/javascript'>

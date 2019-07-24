@@ -31,6 +31,6 @@
         <img src="noimages/won.jpg" alt="">   
     </div>
     <div id="clusterchart">
-        <img src="noimages/squarecharts.jpg" alt="">   
+        <!-- <img src="noimages/squarecharts.jpg" alt="">    -->
     </div>
 </div>
