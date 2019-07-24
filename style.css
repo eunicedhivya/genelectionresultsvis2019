@@ -50,6 +50,7 @@
 
     .hideinmobile{ display: none; }
     #resultStatus {background-color: #000000; color: #ffffff; padding: 15px 0 2px 10px; margin-bottom: 15px;}
+    .width50{ width: 100%;}
 
 }
 
