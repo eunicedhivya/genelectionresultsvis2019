@@ -47,8 +47,10 @@
 <script src="js/data.js"></script>
 <script src="js/importdata.js"></script>
 <script src="js/interaction.js"></script>
+<script src="js/function.js"></script>
 <script src="js/statemap.js"></script>
 <script src="js/custommap.js"></script>
+<script src="js/assemblymap.js"></script>
 <script src="js/clusterchart.js"></script>
 <script src="js/horizontalstackchart.js"></script>
 <script src="js/piechart.js"></script>
@@ -121,4 +123,10 @@
 
     //ae election view (Section Five) =================================================
     //=================================================================
+    drawAssemblyMap("#aemap", "2019", "Desktop", {
+        mapsource: 'map/andhrapradesh-ac.json',
+        statecode: "S01",
+        center: [80.8, 16] ,
+        scale: 2500
+    })
 </script>

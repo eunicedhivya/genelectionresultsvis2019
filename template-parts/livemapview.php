@@ -28,7 +28,7 @@
         <p><span>542</span> of 542</p>
     </div>
     <div id="leadwinhorchart">
-        <img src="noimages/won.jpg" alt="">   
+        <!-- <img src="noimages/won.jpg" alt="">    -->
     </div>
     <div id="clusterchart">
         <!-- <img src="noimages/squarecharts.jpg" alt="">    -->
