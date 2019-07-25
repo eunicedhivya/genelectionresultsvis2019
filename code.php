@@ -28,13 +28,13 @@
     <section class="genelection-sections clearfixsol" id="exitPoll">
         <?php include 'template-parts/exitpollview.php';?>
     </section>
-    <section class="genelection-sections">
+    <section class="genelection-sections" id="livesectionview">
         <?php include 'template-parts/livemapview.php';?>
     </section>
     <section class="genelection-sections clearfixsol">
         <?php include 'template-parts/comparisionview.php';?>
     </section>
-    <section class="genelection-sections">
+    <section class="genelection-sections" id="aesectionlive">
         <?php include 'template-parts/aeelectionview.php';?>
     </section>
 

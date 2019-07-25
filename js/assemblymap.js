@@ -76,7 +76,10 @@ function drawAssemblyMap(selector, years, device, settings){
                         .attr('stroke-opacity', "1")
                         .attr("data-statecode", function(d,i){
                             return d['properties']['ST_CODE'];
-                        }) 
+                        })
+                        .on("click", function(d){
+                            d3.select("#aeconstituencydata").classed("hideinmobile", false);
+                        })
 
             var statePC = svg.selectAll(".statewise-seats").data(stateCentroid)
                 .enter().append("svg")

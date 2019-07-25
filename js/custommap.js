@@ -63,6 +63,9 @@ function drawCustomMap(selector, boundary, years, device){
                     // console.log(d['properties']['ST_CODE'],d['properties']['PC_CODE']);
                     return d['properties']['ST_CODE'];
                 })
+                .on("click", function(d){
+                    d3.select("#constituencydata").classed("hideinmobile", false);
+                })
 
         var statePC = svg.selectAll(".statewise-seats").data(stateCentroid)
             .enter().append("svg")
